@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+	<h1>Annadir Comunidades</h1>
+
+	<a href="/nuevaComunidad.html">Nueva comunidad</a>
+
+	<p th:each="comunidad : ${comunidades}">
+		<span th:text="'CIF: ' + ${comunidad.cif}"></span><br/>
+		<span th:text="'Calle: '+ ${comunidad.calle}"></span><br/>
+		<span th:text="'Poblacion: '+ ${comunidad.poblacion}"></span><br/>
+		<span th:text="'Nª: '+ ${comunidad.numero}"></span><br/>
+		<span th:text="'Codigo Postal: '+ ${comunidad.codigoPostal}"></span><br/>
+		<span th:text="'Numero de Cuenta: '+ ${comunidad.cuenta}"></span><br/>
+		<a th:href="@{/mostrar(numComunidad=${comunidadStat.index})}">Ver</a>
+	</p>
+</body>
+</html>

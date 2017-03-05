@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+
+	<h1>Nueva comunidad</h1>
+
+	<form action="/insertar" method="post">
+		<p>
+			<b>CIF:</b> <input type='text' name='cif' />
+		</p>
+
+		<p>
+			<b>Calle:</b> <input type='text' name='calle' />
+		</p>
+
+		<p>
+			<b>Poblacion:</b><br />
+			<textarea name='poblacion' rows='5' cols='40'></textarea>
+		</p>
+		
+		<p>
+			<b>Nº:</b> <input type='text' name='num' />
+		</p>
+		
+		<p>
+			<b>Codigo Postal:</b> <input type='text' name='codigoPostal' />
+		</p>
+		
+		<p>
+			<b>Cuenta Bancaria Asociada:</b> <input type='text' name='cuenta' />
+		</p>
+
+		<input type='submit' name='enviar' value='Enviar' />
+	</form>
+</body>
+</html>
